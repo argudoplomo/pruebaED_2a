@@ -8,6 +8,12 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.Objects;
 
+/**
+ * Una persona que implementa la interfaz Comparable que cuenta con un nif que lo identifica, un nombre, el genero de la persona y su fecha de nacimiento
+ * @author ProfDiurno
+ * @version 1.0
+ * @since 1.0
+ */
 public class Persona implements Comparable<Persona> {
 
     private Nif nif;
@@ -68,6 +74,10 @@ public class Persona implements Comparable<Persona> {
         this.nacimiento = nacimiento;
     }
 
+    /**
+     * Calcula la edad de la persona actualmente
+     * @return devuelve la edad calculada
+     */
     public int getEdad() {
         return Period.between(nacimiento, LocalDate.now()).getYears();
     }
@@ -82,6 +92,11 @@ public class Persona implements Comparable<Persona> {
         }
     }
 
+    /**
+     * Mira si dos personas son la misma mirando que ambos nif son el mismo
+     * @param a La persona con la que se va a comparar su nif con el nif sobre el que se aplica el metodo
+     * @return Devuelve si ambas personas tienen el mismo nif
+     */
     public boolean equals(Persona a) {
         if (a == null) {
             return false;
