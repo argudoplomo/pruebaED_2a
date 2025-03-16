@@ -25,5 +25,10 @@ class PersonaTest {
 		assertEquals(true, p1.equals(p2));
 	}
 	
-	
+	@Test
+	void testEqualsPersona2() {
+		Persona p1 = new Persona(06334300, "David", 'M', 26, 8, 2006);
+		Persona p2 = new Persona(06334301, "David", 'M', 26, 8, 2006);
+		assertEquals(false, p1.equals(p2));
+	}
 }
