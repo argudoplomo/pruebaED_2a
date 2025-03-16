@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 class CursoTest {
 
 	@Test
-	void testAniadirAlumno1() {
+	void testAniadirAlumno() {
 		//Como te comento en el pdf, se me ha hecho imposible testear este metodo
 	}
 	
