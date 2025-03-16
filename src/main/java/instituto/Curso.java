@@ -7,8 +7,10 @@ package instituto;
 import java.util.TreeSet;
 
 /**
- *
+ * Curso que cuenta con su nombre de curso (nombre) y con la lista de alumnos (listaAlumnos) que pertenecen al curso.
  * @author ProfDiurno
+ * @version 1.0
+ * @since 1.0
  */
 public class Curso {
 
@@ -35,6 +37,10 @@ public class Curso {
         return s;
     }
 
+    /**
+     * Añade una persona a la lista de alumnos (listaAlumnos) del curso donde se utilize el metodo
+     * @param p Persona que se añade a la lista de alumnos (listaAlumnos)
+     */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
     }
